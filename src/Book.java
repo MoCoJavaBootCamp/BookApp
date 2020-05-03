@@ -1,10 +1,10 @@
 public class Book {
 
-    public String title;
-    public String author;
-    public String description;
-    public double price;
-    public boolean inStock;
+    private String title;
+    private String author;
+    private String description;
+    private double price;
+    private boolean inStock;
 
     //default constructor
     Book() {
@@ -63,8 +63,8 @@ public class Book {
         this.inStock = inStock;
     }
 
-    public String getDisplayText() {
-        return "Display text";
+    public void getDisplayText() {
+        System.out.printf("Author: %s\nTitle: %s\nDescription: %s\n", this.getAuthor(), this.getTitle(), this.getDescription());
     }
 
 
